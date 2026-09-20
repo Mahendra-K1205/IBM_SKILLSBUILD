@@ -27,18 +27,6 @@ STOCK_ANALYSIS/
 ├── project_report.docx                # Full project report with charts
 ├── README.md                          # This file
 │
-├── report_images/                     # Auto-generated chart PNGs for the report
-│   ├── 01_growth_1000.png
-│   ├── 02_annual_returns.png
-│   ├── 03_asset_types.png
-│   ├── 04_crash_overlay.png
-│   ├── 05_drawdown.png
-│   ├── 06_heatmap.png
-│   ├── 07_volatility.png
-│   ├── 08_actual_vs_pred.png
-│   ├── 09_forecast.png
-│   ├── 10_feature_importance.png
-│   └── 11_data_quality.png
 │
 ├── generate_screenshots.py            # Script that produced report_images/
 ├── test_pipeline.py                   # Data pipeline smoke tests
@@ -178,12 +166,6 @@ Install with:
 pip install -r requirements.txt
 ```
 
-To regenerate the report chart images (requires `kaleido>=1`):
-```bash
-pip install "kaleido>=1"
-python generate_screenshots.py
-```
-
 ---
 
 ## ⚠️ Disclaimer
@@ -191,20 +173,3 @@ python generate_screenshots.py
 This project is for **educational and research purposes only**. All analysis, ML predictions, and portfolio recommendations are based on historical statistical patterns and do **not** constitute financial advice. Past performance does not guarantee future results. Always consult a qualified financial advisor before making investment decisions.
 
 ---
-
-## 📄 Report
-
-A full written report with embedded charts is available as [`project_report.docx`](project_report.docx).
-
-It covers:
-1. Project Overview
-2. Dataset Description
-3. Data Collection and Loading
-4. Data Quality Check
-5. Exploratory Data Analysis
-6. Price History and Trend Analysis
-7. Market Crashes and Drawdowns
-8. Hidden Trends and Seasonality
-9. Machine Learning Price Forecast
-10. Business Insights and Recommendations
-11. Conclusion and Technology Stack
